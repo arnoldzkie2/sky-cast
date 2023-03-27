@@ -1,0 +1,83 @@
+.forecast-container {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.forecast-container h2 {
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: min(max(20px, 3vw),45px);
+
+}
+.daily-item{
+    background: rgba(255,255,255,0.7);
+    margin: 15px auto;
+    border-radius: 20px;
+    height: 70px;
+    color: #222;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.daily-item:hover {
+    box-shadow: 5px 5px 15px  rgba(0,0,0,0.3);
+    transform: scale(1.01);
+}
+
+.daily-item img {
+    width: 50px;
+}
+
+.daily-item .day {
+    flex: 1 1;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: min(max(13px, 2vw), 22px);
+    transition: 0.3s;
+}
+
+.forecast-description {
+    flex: 1 1;
+    cursor: pointer;
+    font-size: min(max(12px, 2vw), 18px);
+    text-align: right;
+    font-weight: 450;
+    margin-right: 15px;
+}
+
+.daily-item .temp{
+    cursor: pointer;
+    font-size: min(max(10px, 2vw), 15px);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex: 1 1;
+    row-gap: 0;
+    column-gap: 15px;
+    grid-row-gap: 10px;
+    grid-column-gap: 13px;
+    padding: 0 20px;
+}
+
+.details-grid-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-grid-items .field {
+    font-weight: bold;
+    color: #333;
+    font-size: min(max(13px, 2vw), 18px);
+}
+
+.details-grid-items label {
+    color: #222;
+    font-size: min(max(11px, 2vw), 15px);
+}
